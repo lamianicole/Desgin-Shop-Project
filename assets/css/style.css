@@ -1,10 +1,220 @@
+@font-face{
+    font-family: "Karla-Bold";
+    src: url("../fonts/Karla-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Karla-Regular";
+    src: url("../fonts/Karla-Regular.ttf");
+}
+
+/* !-------------------------------------generelles Styling */
+html {
+    font-size: 10px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* !---------------Styling header navigation bar ----------- */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 12em;
+}
+
+.shop{
+    font-family: "Karla-Bold";
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.shop:hover{
+    color: 323A45;
+}
+
+.logo{
+    font-family: "Karla-Bold";
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    /* font-weight: 900; */
+}
+
+.logo:hover{
+    color: 323A45;
+    transition: 0.4s;
+}
+
+header a{
+    font-family: "Karla-Bold";
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: 323A45;
+    transition: 0.4s;
+}
+
+header nav{
+    display: flex;
+    gap: 0 2em;
+}
+/* !---------------Styling section-bag ----------- */
+.section-bag img{
+        width: 100%;
+        height: 65vh;
+        object-fit: cover; 
+        display: block;
+}
+
+.section-bag h3{
+    font-family: "Karla-Regular";
+    font-size: 1.5rem;
+    color: black;
+}
+
+.section-bag p{
+    font-family: "Karla-Regular";
+    font-size: 1.5em;
+    color: #848484;
+}
+
+.bag-caption{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 0 2em; */
+    /* padding: 2em 12em; */
+}
+/* !---------------Styling section-six-img-one ----------- */
 
 
+/* !---------------Styling section-whitebook ----------- */
+.section-whitebook img{
+    width: 100%;
+    height: 65vh;
+    object-fit: cover; 
+    display: block;
+}
 
+.section-whitebook h3{
+font-family: "Karla-Regular";
+font-size: 1.5rem;
+color: black;
+}
 
-/* 
-font: Karla, Bold, 323A45
+.section-whitebook p{
+font-family: "Karla-Regular";
+font-size: 1.5em;
+color: #848484;
+}
 
-fonts BUs: 000000, 
+.whitebook-caption{
+display: flex;
+align-items: center;
+justify-content: space-between;
+/* gap: 0 2em; */
+/* padding: 2em 12em; */
+}
 
-color: F5F5F5*/
+/* !---------------Styling section-six-img-two ----------- */
+
+/* !---------------Styling section-lamp ----------- */
+.section-lamp img{
+    width: 100%;
+    height: 65vh;
+    object-fit: cover; 
+    display: block;
+}
+
+.section-lamp h3{
+font-family: "Karla-Regular";
+font-size: 1.5rem;
+color: black;
+}
+
+.section-lamp p{
+font-family: "Karla-Regular";
+font-size: 1.5em;
+color: #848484;
+}
+
+.lamp-caption{
+display: flex;
+align-items: center;
+justify-content: space-between;
+/* gap: 0 2em; */
+/* padding: 2em 12em; */
+}
+
+/* !---------------Styling section-six-img-three ----------- */
+
+/* !---------------Styling section-bluebook ----------- */
+.section-bluebook img{
+    width: 100%;
+    height: 65vh;
+    object-fit: cover; 
+    display: block;
+}
+
+.section-bluebook h3{
+font-family: "Karla-Regular";
+font-size: 1.5rem;
+color: black;
+}
+
+.section-bluebook p{
+font-family: "Karla-Regular";
+font-size: 1.5em;
+color: #848484;
+}
+
+.bluebook-caption{
+display: flex;
+align-items: center;
+justify-content: space-between;
+/* gap: 0 2em; */
+/* padding: 2em 12em; */
+}
+
+/* !---------------Styling section-six-img-four ----------- */
+
+/* !---------------Styling section-bottles ----------- */
+.section-bottles img{
+    width: 100%;
+    height: 65vh;
+    object-fit: cover; 
+    display: block;
+}
+
+.section-bottles h3{
+font-family: "Karla-Regular";
+font-size: 1.5rem;
+color: black;
+}
+
+.section-bottles p{
+font-family: "Karla-Regular";
+font-size: 1.5em;
+color: #848484;
+}
+
+.bottles-caption{
+display: flex;
+align-items: center;
+justify-content: space-between;
+/* gap: 0 2em; */
+/* padding: 2em 12em; */
+}
+
+/* !---------------Styling section-three-img ----------- */
+
+/* !---------------Styling footer ----------- */
