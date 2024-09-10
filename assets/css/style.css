@@ -1,3 +1,5 @@
+/* !-------------------------------------generelles Styling */
+
 @font-face{
     font-family: "Karla-Bold";
     src: url("../fonts/Karla-Bold.ttf");
@@ -8,15 +10,19 @@
     src: url("../fonts/Karla-Regular.ttf");
 }
 
-/* !-------------------------------------generelles Styling */
-html {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
     font-size: 10px;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body{
+    width: 100%;
+    padding: 0 2vw;
 }
 /* !---------------Styling header navigation bar ----------- */
 
@@ -24,7 +30,15 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2em 12em;
+    padding: 2em 10em;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 0;
+    gap: 0 4em;
 }
 
 .shop{
@@ -34,187 +48,117 @@ header{
     color: black;
 }
 
-.shop:hover{
-    color: 323A45;
-}
-
 .logo{
     font-family: "Karla-Bold";
     font-size: 1rem;
     text-decoration: none;
     color: black;
-    /* font-weight: 900; */
 }
 
 .logo:hover{
-    color: 323A45;
+    color: #323A45;
     transition: 0.4s;
 }
 
-header a{
+nav a{
     font-family: "Karla-Bold";
     font-size: 1rem;
     color: black;
     text-decoration: none;
+    font-weight: bold;
 }
 
-header a:hover{
-    color: 323A45;
+nav a:hover{
+    color: #323A45;
     transition: 0.4s;
 }
 
-header nav{
-    display: flex;
-    gap: 0 2em;
-}
-/* !---------------Styling section-bag ----------- */
-.section-bag img{
-        width: 100%;
-        height: 65vh;
-        object-fit: cover; 
-        display: block;
+/* !---------------Styling product-sections  ----------- */
+
+main a{
+    font-family: "Karla-Regular";
+    text-decoration: none;
 }
 
-.section-bag h3{
-    font-family: "Karla-Regular";
-    font-size: 1.5rem;
-    color: black;
+img{
+    width: 100%;
+    margin-bottom: 2vh;
 }
 
-.section-bag p{
-    font-family: "Karla-Regular";
-    font-size: 1.5em;
+/*hover mit Hilfe*/
+.container-one, .container-six{
+    transition: opacity 0.7s ease;
+}
+
+.container-one:hover, .container-six:hover{
+    opacity: 0.7;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2em;
+    margin-bottom: 5vh;
+}
+
+.container-one{
+    grid-column: 1 / 4;
+}
+
+.caption{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h2{
+    font-size: 1.2em;
+    font-weight: 400;
+    color:#000000;
+}
+
+.caption > h2{
+    text-align: right;
+}
+
+h3{
+    font-size: 1.2em;
+    font-weight: 400;
     color: #848484;
+    margin-bottom: 5vh;
 }
-
-.bag-caption{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* gap: 0 2em; */
-    /* padding: 2em 12em; */
-}
-/* !---------------Styling section-six-img-one ----------- */
-
-
-/* !---------------Styling section-whitebook ----------- */
-.section-whitebook img{
-    width: 100%;
-    height: 65vh;
-    object-fit: cover; 
-    display: block;
-}
-
-.section-whitebook h3{
-font-family: "Karla-Regular";
-font-size: 1.5rem;
-color: black;
-}
-
-.section-whitebook p{
-font-family: "Karla-Regular";
-font-size: 1.5em;
-color: #848484;
-}
-
-.whitebook-caption{
-display: flex;
-align-items: center;
-justify-content: space-between;
-/* gap: 0 2em; */
-/* padding: 2em 12em; */
-}
-
-/* !---------------Styling section-six-img-two ----------- */
-
-/* !---------------Styling section-lamp ----------- */
-.section-lamp img{
-    width: 100%;
-    height: 65vh;
-    object-fit: cover; 
-    display: block;
-}
-
-.section-lamp h3{
-font-family: "Karla-Regular";
-font-size: 1.5rem;
-color: black;
-}
-
-.section-lamp p{
-font-family: "Karla-Regular";
-font-size: 1.5em;
-color: #848484;
-}
-
-.lamp-caption{
-display: flex;
-align-items: center;
-justify-content: space-between;
-/* gap: 0 2em; */
-/* padding: 2em 12em; */
-}
-
-/* !---------------Styling section-six-img-three ----------- */
-
-/* !---------------Styling section-bluebook ----------- */
-.section-bluebook img{
-    width: 100%;
-    height: 65vh;
-    object-fit: cover; 
-    display: block;
-}
-
-.section-bluebook h3{
-font-family: "Karla-Regular";
-font-size: 1.5rem;
-color: black;
-}
-
-.section-bluebook p{
-font-family: "Karla-Regular";
-font-size: 1.5em;
-color: #848484;
-}
-
-.bluebook-caption{
-display: flex;
-align-items: center;
-justify-content: space-between;
-/* gap: 0 2em; */
-/* padding: 2em 12em; */
-}
-
-/* !---------------Styling section-six-img-four ----------- */
-
-/* !---------------Styling section-bottles ----------- */
-.section-bottles img{
-    width: 100%;
-    height: 65vh;
-    object-fit: cover; 
-    display: block;
-}
-
-.section-bottles h3{
-font-family: "Karla-Regular";
-font-size: 1.5rem;
-color: black;
-}
-
-.section-bottles p{
-font-family: "Karla-Regular";
-font-size: 1.5em;
-color: #848484;
-}
-
-.bottles-caption{
-display: flex;
-align-items: center;
-justify-content: space-between;
-/* gap: 0 2em; */
-/* padding: 2em 12em; */
-}
-
-/* !---------------Styling section-three-img ----------- */
 
 /* !---------------Styling footer ----------- */
+footer{
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    gap: 2vw;
+    padding-bottom: 2vh;
+}
+
+footer h4, p, a{
+    font-family: "Karla-Regular"; 
+}
+
+h4{
+    font-size: 1.2em;
+    margin-bottom: 4vh;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+footer a, footer > p{
+    color: #656b72;
+}
+
+footer div:nth-child(even){
+    display: flex;
+    flex-direction: column;
+}
+
+.italic{
+    font-style: italic;
+}
